@@ -1,45 +1,26 @@
-extends ./_partial/layout.pug
-block content
-  include ./_partial/post_header.pug
-  .article-content(style='max-width:'+ theme.content_width +'px')
-    if page.photos && page.photos.length
-      div
-        each photo in page.photos
-          a.article-gallery-img.fancybox(href=photo)
-            img(src=photo)
-    | !{page.content}
-  .article-meta(style='max-width:'+ theme.content_width +'px')
-    if page.tags && page.tags.length
-      .tags
-        i.icon.icon-tag
-        | !{list_tags(page.tags)}
-    if page.tags && page.categories.length
-      .categories
-        i.icon.icon-category
-        | !{list_categories(page.categories)}
-  if theme.duoshuo.enable
-    .article-comment(style='max-width:'+ theme.content_width +'px')
-      #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=config.url + url_for(page.path), site-name=theme.duoshuo.siteName)
-      script.
-        var siteName = document.getElementById('ds-thread').getAttribute('site-name');
-        var duoshuoQuery = {short_name: siteName};
-        (function() {
-          var ds = document.createElement('script');
-          ds.type = 'text/javascript';ds.async = true;
-          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-          ds.charset = 'UTF-8';
-          (document.getElementsByTagName('head')[0] 
-          || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-  ul.navication
-    li.home
-      a(href="/")
-        i.icon.icon-home
-    if page.prev && page.prev.path
-      li
-        a(href=url_for(page.prev.path))
-          i.icon.icon-arror-left
-    if page.next && page.next.path
-      li
-        a(href=url_for(page.next.path))
-          i.icon.icon-arror-right
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="email=no"><meta name="description" content=""><meta name="keywords" content="Hexo, Gruntjs, Nodejs, Reactjs, Vuejs"><title>Hello World - Hexo</title><link rel="stylesheet" href="/css/main_style.min.css"><link rel="icon" href="/favicon.ico"><meta name="generator" content="Hexo 7.3.0"></head><body><input id="navi" type="checkbox"><ul class="main-navication"><li><a href="/"><span>Home</span></a></li><li><a target="_blank" rel="noopener" href="https://github.com"><span>Github</span></a></li><li><a target="_blank" rel="noopener" href="https://www.v2ex.com/"><span>V2EX</span></a></li></ul><div class="wrapper" id="wrap"><div class="post-header"><label class="navi-button light" for="navi">MENU</label><img class="background" src="http://callfiles.ueibo.com/hexo-theme-laughing/post_background.jpg"><div class="post-title"><h1 class="title">Hello World</h1><ul class="meta"><li><i class="icon icon-author"></i>John Doe</li><li><i class="icon icon-clock"></i>2 Minutes</li><li><i class="icon icon-calendar"></i>February 19, 2025</li></ul></div></div><div class="article-content" style="max-width:800px"><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+</div><div class="article-meta" style="max-width:800px"></div><div class="article-comment" style="max-width:800px"><div class="ds-thread" id="ds-thread" data-thread-key="cm7by3vdk0005rsuue4iq3xqw" data-title="Hello World" data-url="https://tingfengceyu.github.io/tingfengceyu.github.io/tingfengceyu.github.io/2025/02/19/hello-world/" site-name="ueibo"></div><script>var siteName = document.getElementById('ds-thread').getAttribute('site-name');
+var duoshuoQuery = {short_name: siteName};
+(function() {
+  var ds = document.createElement('script');
+  ds.type = 'text/javascript';ds.async = true;
+  ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+  ds.charset = 'UTF-8';
+  (document.getElementsByTagName('head')[0] 
+  || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script></div><ul class="navication"><li class="home"><a href="/"><i class="icon icon-home"></i></a></li><li><a href="/tingfengceyu.github.io/2025/02/19/How-to-build-a-bolg-with-Hexo-on-Github/"><i class="icon icon-arror-left"></i></a></li></ul><div class="page-footer"><div class="top"><ul class="social"><li><a href="https://github.com/BoizZ" title="Github" target="_blank"><i class="icon icon-github"></i></a></li><li><a href="https://weibo.com/heqibang" title="Weibo" target="_blank"><i class="icon icon-weibo"></i></a></li><li><a href="https://www.segmentfault.com/u/bon" title="SegmentFault" target="_blank"><i class="icon icon-segmentfault"></i></a></li></ul></div><div class="bottom"><p class="copyright">© 2025 Hexo<br><small>POWER BY <a href="https://hexo.io" target="_blank">HEXO</a></small><small>, THEME BY <a href="https://github.com/BoizZ/hexo-theme-laughing" target="_blank">LAUGHING</a></small></p></div></div></div><script>var wrap = document.getElementById('wrap');
+window.onload = function () {
+  wrap.className += ' done';
+}</script></body></html>
