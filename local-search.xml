@@ -16,18 +16,5 @@
   
   
   
-  <entry>
-    <title></title>
-    <link href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E9%83%A8%E7%BD%B2%E3%80%81%E5%8F%91%E5%B8%83%E3%80%81%E5%88%A0%E9%99%A4/"/>
-    <url>/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E9%83%A8%E7%BD%B2%E3%80%81%E5%8F%91%E5%B8%83%E3%80%81%E5%88%A0%E9%99%A4/</url>
-    
-    <content type="html"><![CDATA[<p>title: 博客文章部署、发布、删除<br>date：<br>部署</p><p>发布<br>hexo new “1”</p><p>删除<br>cd source&#x2F;_posts<br>rm helloworld.md<br>exo<br>hexo clean<br>hexo generate<br>hexo deploy</p><p>&#x2F;&#x2F;本地无需运行<br>rm -rf .deploy_git</p><p>hexo clean<br>hexo generate<br>hexo deploy</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
   
 </search>
