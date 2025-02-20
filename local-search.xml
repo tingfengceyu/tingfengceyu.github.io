@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>https://www.aigc.cn/#term-2494(AIGC导航)</title>
+    <link href="/2025/02/20/https-www-aigc-cn-term-2494-AIGC%E5%AF%BC%E8%88%AA/"/>
+    <url>/2025/02/20/https-www-aigc-cn-term-2494-AIGC%E5%AF%BC%E8%88%AA/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E9%83%A8%E7%BD%B2%E3%80%81%E5%8F%91%E5%B8%83%E3%80%81%E5%88%A0%E9%99%A4/"/>
+    <url>/2025/02/20/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E9%83%A8%E7%BD%B2%E3%80%81%E5%8F%91%E5%B8%83%E3%80%81%E5%88%A0%E9%99%A4/</url>
+    
+    <content type="html"><![CDATA[<p>部署</p><p>发布<br>hexo new “1”</p><p>删除<br>cd source&#x2F;_posts<br>rm helloworld.md<br>exo<br>hexo clean<br>hexo generate<br>hexo deploy</p><p>&#x2F;&#x2F;本地无需运行<br>rm -rf .deploy_git</p><p>hexo clean<br>hexo generate<br>hexo deploy</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello</title>
+    <link href="/2025/02/20/Hello%EF%BC%8C%E5%B0%8F%E5%95%8A%E6%A2%81/"/>
+    <url>/2025/02/20/Hello%EF%BC%8C%E5%B0%8F%E5%95%8A%E6%A2%81/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
